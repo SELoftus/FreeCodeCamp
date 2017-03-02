@@ -1,27 +1,49 @@
-body {
-  
+body {  
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
-#page {
-  
+header {
+  padding-top: 5%;
 }
 
-a {
-  
+h1 {
+  font-family: 'Garamond', serif;
 }
 
-form {
-  
+section {
+  position: relative;
+  margin: 5% auto;
+  width: 75%;
 }
 
-input {
-  
+.btn {
+  margin-top: 1.5%;
 }
 
-#s {
-  
+.btn-default {
+  margin-top: 5%;
+  font-family: 'Garamond';
+  text-align: left;
+  background-color: silver;  
 }
 
-#submitButton {
-  
+p {
+  font-family: 'Alegrya Sans', sans-serif;
+}
+
+#output {
+  font-family: 'Alegreya Sans', sans-serif;
+  background: #fff;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 1em;
+}
+
+footer, a {
+  font-size: .75em;
+  color: #000;
 }
