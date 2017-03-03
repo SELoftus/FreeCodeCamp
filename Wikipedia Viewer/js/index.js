@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  //have search results open in new window/tab
+  $(function(){
+
+    $("#output").click(function(e) {
+        e.preventDefault();
+        window.open(this.href);
+    });
+});
+
    //when search is clicked run code
 $('#search').click(function() {
     //get input field value
@@ -16,7 +25,7 @@ $('#search').click(function() {
             success: function(data, textStatus, jqXHR) {
                 $('#output').html(''); //clears previous search results
                 for(var i = 0; i < data[1].length; i++) {
-                    $('#output').prepend("<div><div class='btn-default'><a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a></div></div>" );   //returns data as array & separates into list items
+                    $('#output').prepend("<div><div class='btn-default'><a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a></div></div>");   //returns data as array & separates into list items
                 }//end of for
                 $("#searchTerm").val('');
                 
