@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  margin: 0;
+  font-family: Cardo, serif;
+}
+.container {
+  background: light-blue;
+}
+
+#quote {
+  font-size: .9em;
+  margin-top: 1%;
+}
+
+#caption {
+  font-size: .75em;
+  width: 90%;
+}
+#timeline {
+  margin-top: 2%;
+}
+
+.timeline p {
+  font-size: small;
+}
+
+ul li {
+    list-style: disc, inside;
+}
+
+hr.divider {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr.divider:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #fff;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
